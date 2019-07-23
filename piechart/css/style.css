@@ -1,0 +1,50 @@
+/* Styles go here */
+html
+{
+  width: auto;
+  height: auto;
+}
+
+#graphelement
+{
+	position:fixed;
+	width:95%;
+	height:50%;
+}
+.classnm .region1
+{
+	background-color:#98abc5;
+}
+.classnm .region2
+{
+	background-color:#8a89a6;
+}
+.classnm .region3
+{
+	background-color:#6b486b;
+}
+.classnm .region4
+{
+	background-color:#a05d56;
+}
+
+.classnms .region1
+{
+	background-color:red;
+}
+.classnms .region2
+{
+	background-color:yellow;
+}
+.classnms .region3
+{
+	background-color:green;
+}
+.classnms .region4
+{
+	background-color:blue;
+}
+.classnms .region5
+{
+	background-color:orange;
+}

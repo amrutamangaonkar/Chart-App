@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <script src="js/angular.js"></script>
+    <script src="js/angular-resource.min.js"></script>
+	<script src="js/d3.js" charset="utf-8"></script>
+    <script src="js/d3v3.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquerymin.js"></script>
+    <script src="js/script.js"></script> 
+    
+  </head>
+	
+  <body ng-app="d3Test">
+  <!-- <div app-piepoc id="headerTag" data-role="header" data-inline="true" data-position="fixed" style="font-size:15px;"></div> -->
+    <div ng-controller="IndicatorsCtrl">
+		<a href="../../index.html" style="color:#0B0080;"><button> Back </button></a>
+		<table width=100% border=0>
+		<tr><td align="right" width=50%>
+	      Enter Name : </td><td width=50%><input type="text" id="txtName">
+	    </td></tr>
+		<tr><td width=50% align="right">
+	      Enter Value : </td><td width=50%><input type="text" id="txtValue"> 
+	    </td></tr>
+		<tr><td colspan="2" align="center">
+	      <center><input type="button" ng-click="doClick()" value="Add Values" class="inputAge"/>
+		  <input type="button" ng-click="generateGraphWithData()" value="Generate graph"/>
+		  <!--<select id="test1" ng-model="myCharts" ng-options="chart.name for chart in charts" ng-change="setChartType(myCharts)">
+          <option value="">--Select--</option>
+    </select>-->
+		  </center>
+		</td>
+		</tr>
+		</table>
+		<br>
+		<br>
+		<table align="left" width="25%" height="25%" border=0 ng-show="false" id="t>
+		<tr><td style="background-color:red;width:25%"></td><td>Red</td></tr>
+		</table>
+		<center>		
+			<graph values="graphdata" slice="label" name="pieValue" slicecolor="colorCode" id="graphelement" class="classnms" widthgraph="graphwidth" heightgraph="graphheight" svgheight="sheight"><div id="colorDiv"></div></graph>
+		</center>		
+    </div>
+  </body>
+
+</html>
